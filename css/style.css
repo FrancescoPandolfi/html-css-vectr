@@ -1,0 +1,136 @@
+
+
+/* GENERAL */
+.d_block {
+  display: block;
+}
+.btn_border_green {
+}
+.bianco {
+  color: #E9EBEC;
+}
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #333C3E;
+  font-size: 32px;
+}
+p.text {
+  font-size: 16px;
+  
+}
+
+
+body {
+  background-color: white;
+  color: #84949a;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* HEADER */
+header {
+  background-color: #232425;
+  color: #84949a;
+}
+.wrapper_fixed {
+  position: fixed;
+  background-color: #232425;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #283031;
+}
+nav {
+  height: 80px;
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav img {
+  width: 100px;
+  margin-right: auto;
+}
+/* JUMBOTRON */
+.jumbo {
+  padding: 130px 0 0 0;
+  background: linear-gradient(0deg, rgba(46,49,50,1) 0%, rgba(35,36,37,1) 100%);
+  overflow: hidden;
+}
+.jumbo_text {
+  max-width: 810px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.jumbo img {
+  width: 100%;
+  max-width: 1000px;
+  box-shadow: 0 10px 90px #181818;
+}
+
+/* LOGOS SECTION */
+.logo_wrapper {
+  height: 76px;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width:999px) {
+  .logo_wrapper {
+    padding: 0 15px;
+  }
+}
+
+.logos img {
+  height: 25px;
+}
+
+/* LEARNING CURVE SECTION */
+.learning_curve {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 110px 0;
+}
+.l_c_text {
+  width: 600px;
+  min-width: 600px;
+  padding: 0 0 0 60px;
+}
+.l_c_image {
+  width: 100%;
+}
+.l_c_image img {
+  width: 100%;
+}
+
+/* REAL TIME SHARING SECTION */
+.bg_black {
+  background-color: #232425;
+}
+.sharing {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  /* background-color: lime; */
+}
+.s_text {
+  width: 600px;
+  padding: 110px 0 110px 60px;
+  /* background-color: gold; */
+}
+.s_image {
+  width: 100%;
+  align-self: flex-end;
+  text-align: right;
+  /* background-color: red; */
+}
