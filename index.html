@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vectr.com</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins:700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -13,20 +14,22 @@
       <div class="wrapper_fixed">
         <nav>
           <img src="img/vectorlogo.svg" alt="Vectr logo">
-          <a href="#">User Guide</a>
-          <a href="#">Tutorials</a>
-          <a href="#">More</a>
-          <a href="#">Use Online</a>
-          <a href="#">Login</a>
+          <div class="menu_wrapper">
+            <a class="btn_menu" href="#">User Guide</a>
+            <a class="btn_menu" href="#">Tutorials</a>
+            <a class="btn_menu border0" href="#">More <i class="fas fa-chevron-down"></i></a>
+            <a class="btn_menu_green_border" href="#">Use Online</a>
+            <a class="btn_menu_login" href="#">Login</a>
+          </div>
         </nav>
       </div>
-      <div class="jumbo text-center">
+      <div class="jumbo">
         <div class="jumbo_text">
           <h1>Free Vector Graphics Software</h1>
           <p>Vectr is a free graphics software used to create vector graphics easily and intuitively. It's a simple yet powerful web and desktop cross-platform tool to bring your designs into reality.</p>
-          <a href="#" class="d_block">Use Online</a>
+          <a class="btn_menu_green_border btn_green_big" href="#">Use Online</a>
         </div>
-        <img src="img/jumbo.png" alt="">
+        <img src="img/jumbo.png" alt="Jumbo">
       </div>
     </header>
 
@@ -34,7 +37,7 @@
     <main>
 
       <!-- LOGOS SECTION -->
-      <section class="logos text-center">
+      <section class="logos">
         <div class="logo_wrapper">
           <img src="img/producthunt.svg" alt="">
           <img src="img/lifehacker.svg" alt="">

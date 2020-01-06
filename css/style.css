@@ -1,13 +1,24 @@
 
-
-/* GENERAL */
-.d_block {
-  display: block;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
+/* GENERAL */
 .btn_border_green {
 }
 .bianco {
   color: #E9EBEC;
+}
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #eceeef;
+  font-size: 40px;
+  line-height: 56px;
+  margin-bottom: 10px;
 }
 h2 {
   font-family: 'Poppins', sans-serif;
@@ -17,14 +28,11 @@ h2 {
 }
 p.text {
   font-size: 16px;
-  
 }
-
 
 body {
   background-color: white;
   color: #84949a;
-  -webkit-font-smoothing: antialiased;
 }
 
 /* HEADER */
@@ -34,7 +42,7 @@ header {
 }
 .wrapper_fixed {
   position: fixed;
-  background-color: #232425;
+  background-color: rgba(35, 36, 37, .96);
   top: 0;
   left: 0;
   width: 100%;
@@ -42,7 +50,7 @@ header {
 }
 nav {
   height: 80px;
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
   display: flex;
   justify-content: flex-end;
@@ -51,26 +59,106 @@ nav {
 nav img {
   width: 100px;
   margin-right: auto;
+  margin-left: 25px;
 }
+.menu_wrapper {
+  margin-right: 25px;
+}
+@media screen and (max-width:900px) {
+  .menu_wrapper {
+    display: none;
+  }
+}
+
+
+
+/* Header buttons */
+a.btn_menu:link,
+a.btn_menu:visited {
+  font-size: 14.4px;
+  color: #475e64;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 5px 0;
+  border-bottom: 2px solid rgba(0, 184, 231,0);
+  border-top: 2px solid rgba(0, 184, 231,0);
+}
+a.btn_menu:hover {
+  color: #FFF;
+  border-bottom: 2px solid #00b8e7;
+}
+a.border0, a.border0:hover  {
+  border: none;
+}
+.fas.fa-chevron-down {
+  font-size: 7px;
+  vertical-align: middle;
+}
+
+a.btn_menu_green_border:link,
+a.btn_menu_login:link,
+a.btn_menu_green_border:visited,
+a.btn_menu_login:visited {
+  font-size: 14.4px;
+  color: #c1ceb2;
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: 2px solid #a1de41;
+}
+
+a.btn_menu_green_border:hover,
+a.btn_menu_login:hover {
+  color: #a1de41;
+  background-color: #202528;
+}
+
+a.btn_menu_login:link,
+a.btn_menu_login:visited,
+a.btn_menu_login:hover  {
+  border: 2px solid #364444;
+  margin-right: 0;
+}
+
 /* JUMBOTRON */
 .jumbo {
-  padding: 130px 0 0 0;
-  background: linear-gradient(0deg, rgba(46,49,50,1) 0%, rgba(35,36,37,1) 100%);
+  padding: 140px 0 0 0;
+  background: linear-gradient(0deg, rgba(46,49,50,1) 0%,rgba(35,36,37,1) 50%, rgba(35,36,37,1) 100%);
   overflow: hidden;
+  text-align: center;
 }
 .jumbo_text {
-  max-width: 810px;
+  max-width: 820px;
   width: 100%;
   margin: 0 auto;
   padding: 0 30px;
+}
+.jumbo_text p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #84949a
 }
 .jumbo img {
   width: 100%;
   max-width: 1000px;
   box-shadow: 0 10px 90px #181818;
+  display: block;
+  margin: 80px auto 0;
+}
+a.btn_green_big:link,
+a.btn_green_big:visited {
+  font-size: 16px;
+  padding: 14px 40px;
+  margin: 30px 0 0;
+  display: inline-block;
 }
 
+
 /* LOGOS SECTION */
+.logos {
+  border-bottom: 1px solid #dde6ea;
+}
 .logo_wrapper {
   height: 76px;
   max-width: 1000px;
@@ -106,6 +194,7 @@ nav img {
 }
 .l_c_image {
   width: 100%;
+  padding-right: 30px;
 }
 .l_c_image img {
   width: 100%;
