@@ -7,8 +7,6 @@
   -webkit-font-smoothing: antialiased;
 }
 /* GENERAL */
-.btn_border_green {
-}
 .bianco {
   color: #E9EBEC;
 }
@@ -25,10 +23,17 @@ h2 {
   font-weight: 700;
   color: #333C3E;
   font-size: 32px;
+  margin-top: 10px;
 }
 p.text {
   font-size: 16px;
+  line-height: 26px;
 }
+.flex {
+  display: flex;
+  align-items: center;
+}
+
 
 body {
   background-color: white;
@@ -167,13 +172,11 @@ a.btn_green_big:visited {
   justify-content: space-between;
   align-items: center;
 }
-
 @media screen and (max-width:999px) {
   .logo_wrapper {
     padding: 0 15px;
   }
 }
-
 .logos img {
   height: 25px;
 }
@@ -192,12 +195,36 @@ a.btn_green_big:visited {
   min-width: 600px;
   padding: 0 0 0 60px;
 }
+.flex img {
+  margin-right: 10px;
+}
 .l_c_image {
   width: 100%;
   padding-right: 30px;
 }
 .l_c_image img {
   width: 100%;
+}
+
+a.btn_cyan:link,
+a.btn_cyan:visited {
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #00b9e7;
+  border-bottom: 2px solid #7fdcf3;
+}
+.fas.fa-chevron-right {
+  font-size: 10px;
+  color: #7fdcf3;
+  margin-left: 3px;
+}
+.bar::after {
+  width: 30px;
+  height: 10px;
+  border: 1px solid black;
 }
 
 /* REAL TIME SHARING SECTION */
