@@ -211,7 +211,7 @@ a.btn_cyan:visited {
   display: inline-block;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
-  margin-top: 30px;
+  margin-top: 20px;
   text-decoration: none;
   color: #00b9e7;
   border-bottom: 2px solid #7fdcf3;
@@ -222,9 +222,14 @@ a.btn_cyan:visited {
   margin-left: 3px;
 }
 .bar::after {
+  display: block;
+  content: "";
   width: 30px;
-  height: 10px;
-  border: 1px solid black;
+  height: 2px;
+  border-radius: 2px;
+  margin: 14px 0 16px 0;
+  border: 1px solid #bed7dd;
+  background-color: #eff5f7;
 }
 
 /* REAL TIME SHARING SECTION */
